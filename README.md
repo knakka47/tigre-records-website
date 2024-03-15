@@ -1,4 +1,4 @@
-# bootstrap-test
+# Tigre Records Website
 
 This is my 1st actual website I've ever created, so please expect there to be much room for improvements. I am trying to go for a cashmoney-records.com kind of aesthetic, and I want my website to primarily be focused on promoting the artists we work with as well as providing our own music-related services that we offer.
 
