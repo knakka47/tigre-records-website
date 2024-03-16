@@ -5,7 +5,9 @@
     --bs-body-font-family: 'Montserrat', sans-serif;
 }
 
-html {scroll-behavior: smooth;}
+html {
+    scroll-behavior: smooth;
+}
 
 a {
     color: var(--primary-color);
@@ -58,6 +60,11 @@ Main Header
 */
 .header {
     z-index: 2;
+    position: fixed;
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
 }
 
 /*
@@ -150,16 +157,17 @@ Hero Section
     opacity: 0.8;
 }
 
-.hero__scroll-btn .bi{
+.hero__scroll-btn .bi {
     transition-delay: 0.8s;
     animation: bounce 1s infinite alternate;
 }
 
-@keyframes bounce{
-    from{
+@keyframes bounce {
+    from {
         transform: translateY(0px);
     }
-    to{
+
+    to {
         transform: translateY(-10px);
     }
 }
@@ -168,18 +176,18 @@ Hero Section
 Steps Section
 */
 
-.steps{
+.steps {
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.steps__section-thumbnail{
+.steps__section-thumbnail {
     height: 240px;
     object-fit: cover;
     margin: 0 auto;
 }
 
-.steps__content-width{
+.steps__content-width {
     max-width: 456px;
     margin: 0 auto;
 }
@@ -189,11 +197,12 @@ Steps Section
 }
 
 @media (min-width: 544px) {
-    .steps{
+    .steps {
         padding-top: 80px;
         padding-bottom: 80px;
     }
-    .steps__section-thumbnail{
+
+    .steps__section-thumbnail {
         height: auto;
     }
 
@@ -203,6 +212,86 @@ Steps Section
 Footer
 */
 
-.footer .border-highlight{
+.footer .border-highlight {
     border-top: 1px solid var(--primary-color-highlights);
+}
+
+/* Initial Pass (Peter) */
+
+@font-face {
+    font-family: '222 03';
+    src: url('./fonts/a2203.eot');
+    src: url('./fonts/a2203.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/a2203.woff2') format('woff2'),
+        url('./fonts/a2203.woff') format('woff'),
+        url('./fonts/a2203.ttf') format('truetype'),
+        url('./fonts/a2203.svg#a2203') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.navbar {
+    padding: 0 !important;
+}
+
+.nav-link {
+    font-size: 1.5em;
+    align-content: space-around;
+    color: white;
+    padding: 15px !important;
+    font-family: '222 03';
+}
+
+.nav-link:hover {
+    color: #aa4a4a;
+}
+
+.nav-link.active, .nav-link:active, .nav-link:focus {
+    color: #aa4a4a !important;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+#label-logo {
+    position: fixed;
+    left: 20px;
+    order: -1;
+}
+
+#header.active-header {
+    background-color: #202124;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+    .nav-link:active {
+        text-decoration: underline;
+        text-underline-offset: 8px;
+    }
+}
+
+/* New landing */
+.landing-image {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.dimmer {
+    background-color: black;
+}
+
+.dimmer::before {
+    content: "";
+    background-image: url("./img/studio-pic.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.45;
+}
+
+html {
+    scroll-behavior: smooth;
 }
