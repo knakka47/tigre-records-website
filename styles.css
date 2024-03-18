@@ -30,6 +30,15 @@ a:hover {
 Custom Container
 */
 
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+/*
+Custom Container
+*/
+
 .container-custom {
     width: 100%;
     padding: 0 1rem;
@@ -247,7 +256,9 @@ Footer
     color: #aa4a4a;
 }
 
-.nav-link.active, .nav-link:active, .nav-link:focus {
+.nav-link.active,
+.nav-link:active,
+.nav-link:focus {
     color: #aa4a4a !important;
     text-decoration: underline;
     text-underline-offset: 8px;

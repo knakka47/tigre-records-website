@@ -1,13 +1,16 @@
 # Tigre Records Website
 
-This is my 1st actual website I've ever created, so please expect there to be much room for improvements. I am trying to go for a cashmoney-records.com kind of aesthetic, and I want my website to primarily be focused on promoting the artists we work with as well as providing our own music-related services that we offer.
+IN PROGRESS ISSUES
 
-A few areas for improvement I've identified:
+Landing Page
 
-- Need to change the Hero visual, might just use a high quality picture rather than video.
-- Haven't incorporated the Tigre Records logo anywhere, so I got to do that
-- I am struggling with having a navbar and dropdown navigation menu coexist, I'd like to implement this if possible
-- Need to adjust color for sure as it is too heavily contrasting at the moment
-- Planning on adding content at the bottom of the page inside the currently empty dark background
+- Logo in top left appears to have inconsistent margins
+- Background color in "Explore" containers needs to be darker
 
-On top of this I need to add functionality to the links and create an engaging user experience. Also open and ready to implement recommendations from my collaborators!
+Releases
+- Logo in Releases page has a different clickable area than in Landing Page
+- Customize page and differentiate from Landing Page
+
+TO DOS
+
+- Create pages for Artists, News, and Store and ensure functional links and unique designs
