@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tigre Records</title>
 
-    <!-- Bootstrap Stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
@@ -19,63 +15,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FontAwesome Stylesheet -->
+    <script src="https://kit.fontawesome.com/4edd6a55b9.js" crossorigin="anonymous"></script>
 
     <script src="scripts.js"></script>
 </head>
 
 <body>
-
-    <!-- Header -->
-    <header id="header" class="header start-0 top-0 end-0">
-        <div class="d-flex align-items-center justify-content-center w-100">
-            <a href="index.html" id="label-logo" class="text-decoration-none text-white fs-5 fw-bold">
-                <img src="img/tigre-logo.png" alt="Tigre Records" class="logo rounded">
-            </a>
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-                <div>
-                    <div class="navbar-nav">
-                        <a class="nav-link active text-white" aria-current="page" href="releases.html">Releases</a>
-                        <a class="nav-link active text-white" aria-current="page" href="artists.html">Artists</a>
-                        <a class="nav-link active text-white" aria-current="page" href="news.html">News</a>
-                        <a class="nav-link active text-white" aria-current="page" href="store.html">Store</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero -->
-    <section class="hero position-relative">
-
-        <div class="hero__overlay"></div>
-
-        <div class="dimmer h-100 w-100">
-            <div class="hero__content h-100 container-custom position-relative">
-                <div class="d-flex h-100 align-items-center hero__content-width">
-                    <div class="text-white">
-                        <h1 class="hero__heading fw-bold mb-4">Discover your Creativity</h1>
-                        <p class="lead mb-4">Creativity is a fleeting phenomenon, but we aim to channel and harness it.
-                            Perform at the highest level with our refined recording approach and industry-standard
-                            equipment.</p>
-                        <a href="#" class="mt-2 btn btn-lg btn-outline-light role=button">Buy Now</a>
-                    </div>
-                </div>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="img/tigre logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">RELEASES</a></li>
+                    <li><a href="">ARTISTS</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">STORE</a></li>
+                </ul>
             </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="hero-text">
+            <h1>TIGRE RECORDS</h1>
+            <p>Creativity is a fleeting phenomenon, but we aim to channel and harness it.<br>Perform at the highest
+                level with our refined recording approach and industry-standard equipment.</p>
+            <a href="" class="hero-button">Discover your Creativity</a>
         </div>
-
-        <a href="#scroll-down" class="hero__scroll-btn">
-            Explore <i class="bi bi-arrow-down-short"></i>
-        </a>
-
     </section>
 
-
-
-    <a id="scroll-down"></a>
-
-    <!-- Section One -->
     <section class="steps container-custom">
 
         <div class="row">
@@ -88,114 +57,22 @@
                     <h1 class="h2 mb-4">High Quality Recording & Tracking</h1>
                     <p class="mb-4">Put simply, there is no substitute for quality vocal recording. Hear your vocals
                         bloom with our Neumann U87 microphone and acoustically treated recording environment.</p>
-                    <a href="#" class="btn btn-primary">Book Studio Time <i class="bi bi-arrow-right"></i></a>
+                    <a href="#" class="btn btn-primary">Book Studio Time <i class="booking-button"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Two -->
-    <section class="steps steps--background alternate">
-
-        <div class="step container-custom">
-
-            <div class="row">
-                <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter order-sm-1">
-                    <img src="media/setup-pic.png" alt="Comfortable Environment"
-                        class="img-fluid pd-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
-                </div>
-                <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
-                    <div class="steps__content-width">
-                        <h1 class="h2 mb-4">Environment Catered to Creativity</h1>
-                        <p class="mb-4">True artistry requires unfiltered collaboration between a producer and an
-                            artist. As both worlds collide, their visions come together and result in a majestic and
-                            powerful end result.</p>
-                        <a href="#" class="btn btn-primary">Custom Instrumentals <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Three -->
-    <section class="steps container-custom">
-
-        <div class="row">
-            <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
-                <img src="media/ssl-fusion.png" alt="SSL Fusion" class="img-fluid pd-4 steps__section-thumbnail"
-                    width="553" height="746" loading="lazy">
-            </div>
-            <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
-                <div class="steps__content-width">
-                    <h1 class="h2 mb-4">Professional & Industry-Standard Equipment</h1>
-                    <p class="mb-4">Your sound determines how your audience will perceive your music. A refined and
-                        professional sound says more than most lyrics ever can, and will raise your productions
-                        above competition.</p>
-                    <a href="#" class="btn btn-primary">Mixing & Mastering <i class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section with 3 Columns -->
-    <section class="bg-dark text-white py-4">
-        <div class="container-custom my-4">
-            <!-- <div class="row">
-                <div class="col-12 col-sm-4 mb-4">
-                    <img src="img/1-coffee-flavour-small.jpg" class="mb-4 img-fluid" alt="Coffee Flavor" width="441"
-                        height="248" loading="lazy">
-                    <h3>Amazing Coffee Flavor</h3>
-                    <p>Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a
-                        theme and
-                        start customizing, no strings attached!</p>
-                </div>
-
-                <div class="col-12 col-sm-4 mb-4">
-                    <img src="img/2-health-benefits-small.jpg" class="mb-4 img-fluid" alt="Health Benefits" width="441"
-                        height="248" loading="lazy">
-                    <h3>Health Benefits</h3>
-                    <p>Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a
-                        theme and
-                        start customizing, no strings attached!</p>
-                </div>
-
-                <div class="col-12 col-sm-4 mb-4">
-                    <img src="img/3-essential-nutrients-small.jpg" class="mb-4 img-fluid" alt="Essential Nutrients"
-                        width="441" height="248" loading="lazy">
-                    <h3>Essential Nutrients</h3>
-                    <p>Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a
-                        theme and
-                        start customizing, no strings attached!</p>
-                </div> -->
-        </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container-custom d-flex justify-content-between align-items-center py-3 border-highlight">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="me-2 text-muted text-decoration-none">
-                    <i class="bi bi-cup"></i>
-                    <span>&copy; 2024 Tigre Records</span>
-                </a>
-            </div>
-
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white">
-                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
-            </ul>
-        </div>
-
-    </footer>
-
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
+    <!--JavasScript: Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
