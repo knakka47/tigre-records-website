@@ -86,7 +86,7 @@ Navigation Bar
     right: 0;
     bottom: 0;
     background-color: rgb(255, 247, 231);
-    z-index: 4;
+    z-index: 100;
 }
 
 .dropdown-nav__closeNavBtn {
@@ -108,7 +108,7 @@ Hero Section
 .hero {
     position: relative;
     height: 100vh;
-    background-color: var(--primary-color);
+    background: rgba(0, 0, 0, 0.75);
     overflow: hidden;
 }
 
@@ -145,7 +145,7 @@ Hero Section
 }
 
 .hero__content-width {
-    max-width: 540px;
+    max-width: 800px;
 }
 
 .hero__scroll-btn {
@@ -245,15 +245,16 @@ Footer
 }
 
 .nav-link {
-    font-size: 1.5em;
+    font-size: 1.2em;
     align-content: space-around;
     color: white;
-    padding: 15px !important;
+    padding: 0.25em 1em !important;
     font-family: '222 03';
+    z-index: 10;
 }
 
 .nav-link:hover {
-    color: #aa4a4a;
+    color: #aa4a4a !important;
 }
 
 .nav-link.active,
@@ -288,21 +289,64 @@ Footer
 }
 
 .dimmer {
-    background-color: black;
+    padding-top: 50px;
+    opacity: 100%;
 }
 
 .dimmer::before {
-    content: "";
-    background-image: url("./img/studio-pic.jpg");
-    background-size: cover;
+    content: '';
     position: absolute;
+    opacity: 1;
     top: 0px;
-    right: 0px;
-    bottom: 0px;
     left: 0px;
-    opacity: 0.45;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.home.dimmer::before {
+    background: url('./img/home-landing.jpg') no-repeat center center/cover;
+}
+
+.releases.dimmer::before {
+    background: url('./img/release-landing.jpg') no-repeat center center/cover;
+}
+
+.artists.dimmer::before {
+    background: url('./img/artist-landing.jpeg') no-repeat center center/cover;
+}
+
+.news.dimmer::before {
+    background: url('./img/news-landing.jpg') no-repeat center center/cover;
+}
+
+.store.dimmer::before {
+    background: url('./img/store-landing.jpeg') no-repeat center center/cover;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.hero__heading {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5em;
+}
+
+.logo.rounded {
+    width: 40px;
+    height: 40px;
+}
+
+.pad-15 {
+    padding: 15px;
+}
+
+iframe#spotify-embed {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: color-mix(in srgb, rgba(40, 40, 40, 1) 90%, rgba(0, 0, 0, 1) 10%);
 }
