@@ -19,6 +19,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <!-- Content Header Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -28,18 +33,20 @@
 <body>
 
     <!-- Header -->
-    <header id="header" class="header start-0 top-0 end-0">
-        <div class="d-flex align-items-center justify-content-center w-100">
-            <a href="index.html" id="label-logo" class="text-decoration-none text-white fs-5 fw-bold">
+    <header id="header" class="header p-3 start-0 top-0 end-0">
+        <div class="d-flex justify-content-between align-items-center container">
+            <a href="index.html">
                 <img src="img/tigre-logo.png" alt="Tigre Records" class="logo rounded">
             </a>
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-                <div>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100">
+                <div class="container-fluid flex-row-reverse">
                     <div class="navbar-nav">
-                        <a class="nav-link active text-white" aria-current="page" href="releases.html">Releases</a>
-                        <a class="nav-link active text-white" aria-current="page" href="artists.html">Artists</a>
-                        <a class="nav-link active text-white" aria-current="page" href="news.html">News</a>
-                        <a class="nav-link active text-white" aria-current="page" href="store.html">Store</a>
+                        <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link text-white" href="./releases.html">Releases</a>
+                        <a class="nav-link text-white" href="./artists.html">Artists</a>
+                        <a class="nav-link text-white" href="./news.html">News</a>
+                        <a class="nav-link text-white" href="./store.html">Store</a>
                     </div>
                 </div>
             </nav>
@@ -47,11 +54,9 @@
     </header>
 
     <!-- Hero -->
-    <section class="hero position-relative">
+    <section class="home dimmer hero position-relative">
 
-        <div class="hero__overlay"></div>
-
-        <div class="dimmer h-100 w-100">
+        <div class="h-100 w-100">
             <div class="hero__content h-100 container-custom position-relative">
                 <div class="d-flex h-100 align-items-center hero__content-width">
                     <div class="text-white">

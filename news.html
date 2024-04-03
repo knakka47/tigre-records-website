@@ -19,46 +19,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <!-- Content Header Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="scripts.js"></script>
 
 </head>
 
 <body>
 
     <!-- Header -->
-    <header class="header p-3 position-absolute start-0 top-0 end-0">
-        <div class="d-flex justify-content-between align-items-center">
+    <header id="header" class="header p-3 start-0 top-0 end-0">
+        <div class="d-flex justify-content-between align-items-center container">
             <a href="index.html">
                 <img src="img/tigre-logo.png" alt="Tigre Records" class="logo rounded">
             </a>
-            <!-- <a href="./index.html" class="text-decoration-none text-white fs-5 fw-bold" style="z-index: 20;">Tigre Records</a> -->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100">
+                <div class="container-fluid flex-row-reverse">
+                    <div class="navbar-nav">
+                        <a class="nav-link text-white" href="./index.html">Home</a>
+                        <a class="nav-link text-white" href="./releases.html">Releases</a>
+                        <a class="nav-link text-white" href="./artists.html">Artists</a>
+                        <a class="nav-link active text-white" aria-current="page" href="./news.html">News</a>
+                        <a class="nav-link text-white" href="./store.html">Store</a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
 
     <!-- Hero -->
-    <section class="hero position-relative">
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100"
-            style="top: 0; z-index: 10;">
-            <div class="container-fluid justify-content-center">
-                <div class="navbar-nav">
-                    <a class="nav-link active text-white" aria-current="page" href="releases.html">Releases</a>
-                    <a class="nav-link active text-white" aria-current="page" href="artists.html">Artists</a>
-                    <a class="nav-link active text-white" aria-current="page" href="news.html">News</a>
-                    <a class="nav-link active text-white" aria-current="page" href="store.html">Store</a>
-                </div>
-            </div>
-        </nav>
-        <div class="hero__overlay"></div>
-
-        <img src="" alt="">
+    <section class="news dimmer hero position-relative">
 
         <div class="hero__content h-40 container-custom position-relative my-4 d-flex justify-content-center">
             <div class="d-flex h-100 align-items-center hero__content-width">
                 <div class="text-white text-center">
                     <h1 class="hero__heading fw-bold mt-4">Stay Updated!</h1>
-                    <p class="lead mb-4">Finding a new artist is like uncovering a fresh dimension of life. We've curated
+                    <p class="lead mb-4">Finding a new artist is like uncovering a fresh dimension of life. We've
+                        curated
                         content showcasing the most promising emerging talents for your enjoyment.</p>
                 </div>
             </div>
@@ -115,12 +119,12 @@
 
 
 
-    <a id="#scroll-down"></a>
+    <a id="scroll-down"></a>
 
     <!-- Section with 3 Columns -->
     <section class="bg-dark text-white py-4">
         <div class="container-custom my-4">
-            
+
         </div>
         </div>
     </section>
