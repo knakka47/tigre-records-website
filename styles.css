@@ -305,19 +305,19 @@ Footer
 }
 
 .home.dimmer::before {
-    background: url('./img/home-landing.jpg') no-repeat center center/cover;
+    background: url('./img/stu-mic-bg-.jpg') no-repeat center center/cover;
 }
 
 .releases.dimmer::before {
-    background: url('./img/release-landing.jpg') no-repeat center center/cover;
+    background: url('./img/releases-bg-5.png') no-repeat center center/cover;
 }
 
 .artists.dimmer::before {
-    background: url('./img/artist-landing.jpeg') no-repeat center center/cover;
+    background: url('./img/artists-bg-2.png') no-repeat center center/cover;
 }
 
 .news.dimmer::before {
-    background: url('./img/news-landing.jpg') no-repeat center center/cover;
+    background: url('./img/news-bg-2.png') no-repeat center center/cover;
 }
 
 .store.dimmer::before {
