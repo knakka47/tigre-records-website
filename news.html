@@ -35,23 +35,19 @@
 
     <!-- Header -->
     <header id="header" class="header p-3 start-0 top-0 end-0">
-        <div class="d-flex justify-content-between align-items-center container">
-            <a href="index.html">
-                <img src="img/tigre-logo.png" alt="Tigre Records" class="logo rounded">
-            </a>
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100">
-                <div class="container-fluid flex-row-reverse">
-                    <div class="navbar-nav">
-                        <a class="nav-link text-white" href="./index.html">Home</a>
-                        <a class="nav-link text-white" href="./releases.html">Releases</a>
-                        <a class="nav-link text-white" href="./artists.html">Artists</a>
-                        <a class="nav-link active text-white" aria-current="page" href="./news.html">News</a>
-                        <!-- <a class="nav-link text-white" href="./store.html">Store</a> -->
-                    </div>
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <a href="index.html"> <img src="img/tigre-logo-no-bg.svg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="releases.html">RELEASES</a></li>
+                    <li><a href="artists.html">ARTISTS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
     </header>
 
     <!-- Hero -->

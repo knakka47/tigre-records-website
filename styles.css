@@ -79,7 +79,7 @@ Main Header
 /*
 Navigation Bar
 */
-#navbar {
+/* #navbar {
     position: fixed;
     left: 0;
     top: 0;
@@ -87,9 +87,9 @@ Navigation Bar
     bottom: 0;
     background-color: rgb(255, 247, 231);
     z-index: 100;
-}
+} */
 
-.dropdown-nav__closeNavBtn {
+/* .dropdown-nav__closeNavBtn {
     position: absolute;
     top: 20px;
     right: 16px;
@@ -99,7 +99,7 @@ Navigation Bar
 .dropdown-nav__container {
     height: 100vh;
     padding: 0 1rem;
-}
+} */
 
 /*
 Hero Section
@@ -240,7 +240,7 @@ Footer
     font-display: swap;
 }
 
-.navbar {
+/* .navbar {
     padding: 0 !important;
 }
 
@@ -255,6 +255,53 @@ Footer
 
 .nav-link:hover {
     color: #aa4a4a !important;
+} */
+
+nav {
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
 }
 
 .nav-link.active,
