@@ -18,3 +18,9 @@ Styling Changes 4/8
 3. Navbar height is too big when active
 4. Could have the footer section flow into the sections above (even with images)
     1. Like the Artists and Releases tabs on https://www.dreamville.com/
+
+Items for Kirit
+1. Look into WooCommerce integration and basic functionality
+2. Create Contact Us form/page
+3. Come up with suitable blog templates and look into how to build blog application
+4. Learn React
