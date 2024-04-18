@@ -371,6 +371,10 @@ nav .fa-solid {
     background: url('./img/store-landing.jpeg') no-repeat center center/cover;
 }
 
+.alfredArticle.dimmer::before {
+    background: url('./img/news-bg-2.png') no-repeat center center/cover;
+}
+
 html {
     scroll-behavior: smooth;
 }

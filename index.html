@@ -43,7 +43,7 @@
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="releases.html">RELEASES</a></li>
                     <li><a href="artists.html">ARTISTS</a></li>
-                    <li><a href="news.html">NEWS</a></li>
+                    <!-- <li><a href="news.html">NEWS</a></li> -->
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -115,7 +115,8 @@
                         <p class="mb-4">True artistry requires unfiltered collaboration between a producer and an
                             artist. As both worlds collide, their visions come together and result in a majestic and
                             powerful end result.</p>
-                        <a href="https://www.youtube.com/@theredroom8553" class="btn btn-primary">Custom Instrumentals <i class="bi bi-arrow-right"></i></a>
+                        <a href="https://www.youtube.com/@theredroom8553" class="btn btn-primary">Custom Instrumentals
+                            <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -135,7 +136,8 @@
                     <h1 class="h2 mb-4">High Quality Recording & Tracking</h1>
                     <p class="mb-4">Put simply, there is no substitute for quality vocal recording. Hear your vocals
                         bloom with our Neumann U87 microphone and acoustically treated recording environment.</p>
-                    <a href="#" class="btn btn-primary">Book Studio Time <i class="bi bi-arrow-right"></i></a>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Book
+                        Studio Time <i class="bi bi-arrow-right"></i></a>
                     <!-- Want the link above to redirect to a Contact Us form -->
                 </div>
             </div>
@@ -153,19 +155,52 @@
         <div class="container-custom d-flex justify-content-between align-items-center py-3 border-highlight">
             <div class="col-md-4 d-flex align-items-center">
                 <a href="/" class="me-2 text-muted text-decoration-none">
-                    <i class="bi bi-cup"></i>
                     <span>&copy; 2024 Tigre Records</span>
                 </a>
             </div>
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white">
                 <!-- <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li> -->
-                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/mixedin4k/"><i class="bi bi-instagram"></i></a></li>
-                <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/people/Tigre-Records/61556265523793/"><i class="bi bi-facebook"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/mixedin4k/"><i
+                            class="bi bi-instagram"></i></a></li>
+                <!-- <li class="ms-3"><a class="text-muted"
+                        href="https://www.facebook.com/people/Tigre-Records/61556265523793/"><i
+                            class="bi bi-facebook"></i></a></li> -->
             </ul>
         </div>
 
     </footer>
+
+    <!-- Contact Form Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Book Studio Time</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="emailAddress" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Describe Your Ideal Studio Session</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Bootstrap JS -->
