@@ -33,23 +33,40 @@
 <body>
 
     <!-- Header -->
-    <header id="header" class="header p-3 start-0 top-0 end-0">
+    <!-- <header id="header" class="header p-2 start-0 top-0 end-0">
 
         <nav>
-            <a href="index.html"> <img src="img/tigre-logo-no-bg.svg"></a>
+            <a href="index.html"><img class="logo-img" src="img/tigre-logo-no-bg.svg"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-                <ul>
+                <ul class="nav-links-list">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="releases.html">RELEASES</a></li>
                     <li><a href="artists.html">ARTISTS</a></li>
-                    <!-- <li><a href="news.html">NEWS</a></li> -->
+                    <li><a href="news.html">NEWS</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
 
-    </header>
+    </header> -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark header p-3" id="header">
+        <div class="container-fluid">
+            <a class="logo-wrapper" href="index.html"><img class="logo-img" src="img/tigre-logo-no-bg.svg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#n_bar"
+                aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-links justify-content-end" id="n_bar">
+                <ul class="navbar-nav nav-links-list">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="releases.html">RELEASES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artists.html">ARTISTS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero -->
     <section class="home dimmer hero position-relative">
@@ -79,28 +96,31 @@
     <a id="scroll-down"></a>
 
     <!-- Section One -->
-    <section class="steps container-custom">
+    <section class="steps steps--background">
 
-        <div class="row">
-            <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
-                <img src="media/ssl-fusion.png" alt="SSL Fusion" class="img-fluid pd-4 steps__section-thumbnail"
-                    width="553" height="746" loading="lazy">
-            </div>
-            <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
-                <div class="steps__content-width">
-                    <h1 class="h2 mb-4">Professional & Industry-Standard Equipment</h1>
-                    <p class="mb-4">Your sound determines how your audience will perceive your music. A refined and
-                        professional sound says more than most lyrics ever can, and will raise your productions
-                        above competition.</p>
-                    <a href="https://engineears.com/mixedin4k" class="btn btn-primary">Mixing & Mastering <i
-                            class="bi bi-arrow-right"></i></a>
+        <div class="step container-custom">
+
+            <div class="row">
+                <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
+                    <img src="media/ssl-fusion.png" alt="SSL Fusion" class="img-fluid pd-4 steps__section-thumbnail"
+                        width="553" height="746" loading="lazy">
+                </div>
+                <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+                    <div class="steps__content-width">
+                        <h1 class="h2 mb-4">Professional & Industry-Standard Equipment</h1>
+                        <p class="mb-4">Your sound determines how your audience will perceive your music. A refined and
+                            professional sound says more than most lyrics ever can, and will raise your productions
+                            above competition.</p>
+                        <a href="https://engineears.com/mixedin4k" class="btn btn-primary">Mixing & Mastering <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section Two -->
-    <section class="steps steps--background">
+    <section class="steps steps--background--alt">
 
         <div class="step container-custom">
 
@@ -124,44 +144,45 @@
     </section>
 
     <!-- Section Three -->
-    <section class="steps container-custom">
-
-        <div class="row">
-            <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
-                <img src="media/mic-pic.png" alt="Neumann U87 Microphone"
-                    class="img-fluid pd-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
-            </div>
-            <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
-                <div class="steps__content-width">
-                    <h1 class="h2 mb-4">High Quality Recording & Tracking</h1>
-                    <p class="mb-4">Put simply, there is no substitute for quality vocal recording. Hear your vocals
-                        bloom with our Neumann U87 microphone and acoustically treated recording environment.</p>
-                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Book
-                        Studio Time <i class="bi bi-arrow-right"></i></a>
-                    <!-- Want the link above to redirect to a Contact Us form -->
+    <section class="steps steps--background">
+        <div class="step container-custom">
+            <div class="row">
+                <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
+                    <img src="media/mic-pic.png" alt="Neumann U87 Microphone"
+                        class="img-fluid pd-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+                </div>
+                <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+                    <div class="steps__content-width">
+                        <h1 class="h2 mb-4">High Quality Recording & Tracking</h1>
+                        <p class="mb-4">Put simply, there is no substitute for quality vocal recording. Hear your vocals
+                            bloom with our Neumann U87 microphone and acoustically treated recording environment.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Book
+                            Studio Time <i class="bi bi-arrow-right"></i></a>
+                        <!-- Want the link above to redirect to a Contact Us form -->
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section with Dark Separator -->
-    <section class="bg-dark text-white py-4">
+    <!-- <section class="bg-dark text-white py-4">
         <div class="container-custom my-4">
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer home-footer">
         <div class="container-custom d-flex justify-content-between align-items-center py-3 border-highlight">
             <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="me-2 text-muted text-decoration-none">
+                <a href="/" class="me-2 text-decoration-none">
                     <span>&copy; 2024 Tigre Records</span>
                 </a>
             </div>
 
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white">
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <!-- <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li> -->
-                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/mixedin4k/"><i
+                <li class="ms-3"><a href="https://www.instagram.com/mixedin4k/"><i
                             class="bi bi-instagram"></i></a></li>
                 <!-- <li class="ms-3"><a class="text-muted"
                         href="https://www.facebook.com/people/Tigre-Records/61556265523793/"><i
@@ -204,9 +225,16 @@
 
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> -->
 
 </body>
 
