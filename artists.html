@@ -34,21 +34,22 @@
 <body>
 
     <!-- Header -->
-    <header id="header" class="header p-3 start-0 top-0 end-0">
-        <nav>
-            <a href="index.html"> <img src="img/tigre-logo-no-bg.svg"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="releases.html">RELEASES</a></li>
-                    <li><a href="artists.html">ARTISTS</a></li>
-                    <!-- <li><a href="news.html">NEWS</a></li> -->
+    <nav class="navbar navbar-expand-sm navbar-dark header p-3" id="header">
+        <div class="container-fluid">
+            <a class="logo-wrapper" href="index.html"><img class="logo-img" src="img/tigre-logo-no-bg.svg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#n_bar"
+                aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-links justify-content-end" id="n_bar">
+                <ul class="navbar-nav nav-links-list">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="releases.html">RELEASES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artists.html">ARTISTS</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Hero -->
     <section class="artists dimmer hero position-relative">
@@ -84,12 +85,12 @@
     <a id="scroll-down"></a>
 
     <!-- Section with 3 Columns -->
-    <section class="bg-dark text-white py-4">
+    <!-- <section class="bg-dark text-white py-4">
         <div class="container-custom my-4">
 
         </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -111,9 +112,16 @@
 
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> -->
 
 </body>
 
