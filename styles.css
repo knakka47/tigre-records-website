@@ -333,6 +333,64 @@ nav .fa-solid {
     }
 }
 
+.artist {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.artist img {
+    transition: transform 0.5s ease;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.artist-name {
+    position: absolute;
+    top: 50%; /* Center vertically exactly in the middle of the image */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for true centering */
+    font-size: 2.5rem; /* Large font size */
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 900; /* Bolder font */
+    letter-spacing: 3px; /* Increased spacing between characters */
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 10;
+    text-align: center; /* Ensures text is centered if it wraps */
+    text-transform: uppercase; /* Makes text uppercase */
+}
+
+.artist::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0.2) 0%, /* Starts lighter at the top */
+        rgba(0,0,0,0.8) 50%, /* Darker in the middle */
+        rgba(0,0,0,1) 100% /* Fully black at the bottom */
+    );
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    z-index: 5;
+}
+
+.artist:hover img {
+    transform: scale(1.1);
+}
+
+.artist:hover .artist-name,
+.artist:hover::before {
+    opacity: 1;
+}
+
+
 /* New landing */
 .landing-image {
     height: 100%;
