@@ -28,3 +28,12 @@ Items for Kirit
 2. Create Contact Us form/page
 3. Come up with suitable blog templates and look into how to build blog application
 4. Learn React
+
+Tigre Site V2 Rollout Items (Target June 14)
+
+1. Apply favicon upon opening tab
+2. Implement CSS versioning to avoid browser caching issues
+3. Ensure functionality of form submission and email output
+4. Refine News page and implement blog functionality
+5. Create landing page for each artist
+6. Change text on landing page for all C2As
