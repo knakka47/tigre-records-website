@@ -9,6 +9,39 @@ body {
     background-color: #202124;
 }
 
+body.artist-page {
+    background-color: white;
+    color: black;
+}
+
+.artist-page .hero {
+    padding-top: 80px; /* Adjust this value to match the height of your navbar */
+    background-color: black; /* Background color for the hero section */
+    color: white; /* Text color for the hero section */
+}
+
+.artist-page .hero__heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+.artist-page .hero__content img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.artist-page .bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.artist-page h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -20,15 +53,6 @@ a {
 a:hover {
     color: var(--primary-color);
 }
-
-/*
-    @media (min-width: 544px)  {}
-    @media (min-width: 768px)  {}
-    @media (min-width: 992px)  {}
-    @media (min-width: 1200px) {}
-    @media (min-width: 1400px) {}
-    @media (min-width: 1600px) {}
-*/
 
 /*
 Custom Container
@@ -80,31 +104,6 @@ Main Header
     transition: all ease-out .5s;
     width: 100%;
 }
-
-/*
-Navigation Bar
-*/
-/* #navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(255, 247, 231);
-    z-index: 100;
-} */
-
-/* .dropdown-nav__closeNavBtn {
-    position: absolute;
-    top: 20px;
-    right: 16px;
-    background-color: rbg(255, 255, 255, 0.6);
-}
-
-.dropdown-nav__container {
-    height: 100vh;
-    padding: 0 1rem;
-} */
 
 /*
 Hero Section
@@ -245,23 +244,6 @@ Footer
     font-display: swap;
 }
 
-/* .navbar {
-    padding: 0 !important;
-}
-
-.nav-link {
-    font-size: 1.2em;
-    align-content: space-around;
-    color: white;
-    padding: 0.25em 1em !important;
-    font-family: '222 03';
-    z-index: 10;
-}
-
-.nav-link:hover {
-    color: #aa4a4a !important;
-} */
-
 nav {
     display: flex;
     padding: 0 2em;
@@ -309,13 +291,6 @@ nav .fa-solid {
     width: 100%;
 }
 
-/* .nav-link.active,
-.nav-link:active,
-.nav-link:focus {
-    color: #aa4a4a !important;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-} */
 
 #label-logo {
     position: fixed;
@@ -348,19 +323,27 @@ nav .fa-solid {
 
 .artist-name {
     position: absolute;
-    top: 50%; /* Center vertically exactly in the middle of the image */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for true centering */
-    font-size: 2.5rem; /* Large font size */
+    top: 50%;
+    /* Center vertically exactly in the middle of the image */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust for true centering */
+    font-size: 2.5rem;
+    /* Large font size */
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 900; /* Bolder font */
-    letter-spacing: 3px; /* Increased spacing between characters */
+    font-weight: 900;
+    /* Bolder font */
+    letter-spacing: 3px;
+    /* Increased spacing between characters */
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
     z-index: 10;
-    text-align: center; /* Ensures text is centered if it wraps */
-    text-transform: uppercase; /* Makes text uppercase */
+    text-align: center;
+    /* Ensures text is centered if it wraps */
+    text-transform: uppercase;
+    /* Makes text uppercase */
 }
 
 .artist::before {
@@ -370,12 +353,14 @@ nav .fa-solid {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        to bottom, 
-        rgba(0,0,0,0.2) 0%, /* Starts lighter at the top */
-        rgba(0,0,0,0.8) 50%, /* Darker in the middle */
-        rgba(0,0,0,1) 100% /* Fully black at the bottom */
-    );
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.2) 0%,
+            /* Starts lighter at the top */
+            rgba(0, 0, 0, 0.8) 50%,
+            /* Darker in the middle */
+            rgba(0, 0, 0, 1) 100%
+            /* Fully black at the bottom */
+        );
     transition: opacity 0.5s ease;
     opacity: 0;
     z-index: 5;
@@ -389,6 +374,37 @@ nav .fa-solid {
 .artist:hover::before {
     opacity: 1;
 }
+
+/* Article Styling */
+
+body.article-page {
+    background-color: white;
+    color: black;
+    /* Set the background color to white */
+}
+
+body.article-page h1,
+body.article-page h2,
+body.article-page h3,
+body.article-page h4,
+body.article-page h5,
+body.article-page h6,
+body.article-page p,
+body.article-page a,
+body.article-page li,
+body.article-page span,
+body.article-page div {
+    color: black !important;
+}
+
+.white-background {
+    background-color: white !important;
+}
+
+.article-page .hero {
+    padding-top: 80px; /* Adjust this value to match the height of your navbar */
+}
+
 
 
 /* New landing */
@@ -435,10 +451,6 @@ nav .fa-solid {
 
 .store.dimmer::before {
     background: url('./img/store-landing.jpeg') no-repeat center center/cover;
-}
-
-.alfredArticle.dimmer::before {
-    background: url('./img/news-bg-2.png') no-repeat center center/cover;
 }
 
 .hero__heading {

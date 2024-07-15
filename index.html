@@ -67,6 +67,7 @@
                     <li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="releases.html">RELEASES</a></li>
                     <li class="nav-item"><a class="nav-link" href="artists.html">ARTISTS</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="news.html">NEWS</a></li> -->
                 </ul>
             </div>
         </div>
@@ -195,7 +196,7 @@
 
     </footer>
 
-    <!-- Contact Form Modal -->
+    Contact Form Modal
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -204,8 +205,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="contactForm" method="POST"
-                        action="https://script.google.com/macros/s/AKfycbzH7Gl1lVi0swEoOMfrjdkqPk4hoB3H2tr_Ad0d7eouPWr8Wc2BaEttBAs1cwgLL07b/exec">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="4b7dd704-46f3-4237-bdd9-9e394b36f765">
                         <div class="mb-3">
                             <label for="fullName" class="form-label">Full Name</label>
                             <input type="text" class="form-control" id="fullName" name="fullName" required>
